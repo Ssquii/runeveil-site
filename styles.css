@@ -448,3 +448,139 @@ h3 {
     grid-template-columns: 1fr;
   }
 }
+
+
+/* ===== Runeveil obvious effects layer ===== */
+body{
+  position:relative;
+  overflow-x:hidden;
+}
+
+.rv-effects{
+  position:fixed;
+  inset:0;
+  z-index:-2;
+  pointer-events:none;
+  overflow:hidden;
+}
+
+.rv-cinematic{
+  position:absolute;
+  inset:-2%;
+  background:
+    linear-gradient(180deg, rgba(8,10,18,.12), rgba(7,9,15,.58)),
+    url("minecraft_cinematic_bg.svg") center/cover no-repeat;
+  transform:scale(1.08);
+  animation: rvBgMove 16s ease-in-out infinite alternate;
+  filter:saturate(1.08) contrast(1.06);
+}
+
+.rv-vignette{
+  position:absolute;
+  inset:0;
+  background:
+    radial-gradient(circle at center, transparent 40%, rgba(3,4,8,.38) 100%),
+    linear-gradient(180deg, rgba(6,8,12,.08), rgba(6,8,12,.45));
+}
+
+.rv-fog{
+  position:absolute;
+  border-radius:999px;
+  filter:blur(95px);
+  opacity:.42;
+  mix-blend-mode:screen;
+}
+.rv-fog-a{
+  width:460px;
+  height:460px;
+  left:-90px;
+  top:-40px;
+  background:rgba(157, 103, 255, .40);
+  animation: rvFogA 9s ease-in-out infinite alternate;
+}
+.rv-fog-b{
+  width:420px;
+  height:420px;
+  right:-80px;
+  top:120px;
+  background:rgba(105, 225, 255, .25);
+  animation: rvFogB 11s ease-in-out infinite alternate;
+}
+
+.rv-particles{
+  position:absolute;
+  inset:-10%;
+  background-repeat:repeat;
+}
+.rv-particles-a{
+  background-image:
+    radial-gradient(circle, rgba(255,255,255,.95) 0 1.4px, transparent 1.9px),
+    radial-gradient(circle, rgba(193,148,255,.8) 0 1.7px, transparent 2.2px),
+    radial-gradient(circle, rgba(119,226,255,.75) 0 1.5px, transparent 2px);
+  background-size: 180px 180px, 260px 260px, 220px 220px;
+  background-position: 0 0, 40px 80px, 100px 30px;
+  opacity:.65;
+  animation: rvParticlesA 18s linear infinite;
+}
+.rv-particles-b{
+  background-image:
+    radial-gradient(circle, rgba(255,255,255,.35) 0 2.2px, transparent 2.8px),
+    radial-gradient(circle, rgba(145,95,255,.28) 0 2.6px, transparent 3.2px);
+  background-size: 320px 320px, 420px 420px;
+  background-position: 20px 50px, 100px 130px;
+  opacity:.28;
+  animation: rvParticlesB 28s linear infinite;
+}
+
+.rv-logo-glow,
+.logo{
+  text-shadow:
+    0 0 10px rgba(218,170,255,.82),
+    0 0 22px rgba(143,95,255,.55),
+    0 0 42px rgba(105,225,255,.26);
+  animation: rvLogoPulse 2.8s ease-in-out infinite;
+}
+
+.rv-title-glow{
+  display:inline-block;
+  text-shadow:
+    0 0 8px rgba(238,223,255,.50),
+    0 0 18px rgba(203,140,255,.30),
+    0 0 34px rgba(143,95,255,.18);
+  animation: rvTitlePulse 3.2s ease-in-out infinite;
+}
+
+@keyframes rvBgMove{
+  from{transform:scale(1.08) translate3d(0,0,0)}
+  to{transform:scale(1.12) translate3d(0,-16px,0)}
+}
+@keyframes rvFogA{
+  from{transform:translate3d(0,0,0)}
+  to{transform:translate3d(32px,-14px,0)}
+}
+@keyframes rvFogB{
+  from{transform:translate3d(0,0,0)}
+  to{transform:translate3d(-28px,16px,0)}
+}
+@keyframes rvParticlesA{
+  from{transform:translateY(0)}
+  to{transform:translateY(48px)}
+}
+@keyframes rvParticlesB{
+  from{transform:translateY(0)}
+  to{transform:translateY(-34px)}
+}
+@keyframes rvLogoPulse{
+  0%,100%{filter:brightness(1)}
+  50%{filter:brightness(1.12)}
+}
+@keyframes rvTitlePulse{
+  0%,100%{opacity:1}
+  50%{opacity:.92}
+}
+
+/* keep page content above effects */
+.hero, .section, .page, .nav {
+  position:relative;
+  z-index:1;
+}
