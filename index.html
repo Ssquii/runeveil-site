@@ -1,82 +1,183 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Runeveil</title>
-<link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Runeveil — Dark Fantasy Survival</title>
+  <meta name="description" content="Runeveil is a dark fantasy semi-anarchy Minecraft survival server built around events, progression, PvP, and powerful gear upgrades." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700;800&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
 </head>
-
 <body>
+  <div class="site-bg"></div>
+  <div class="noise"></div>
 
-<header class="hero">
-<div class="nav">
-<div class="logo">RUNEVEIL</div>
+  <header class="hero-shell">
+    <nav class="nav">
+      <a href="index.html" class="brand">RUNEVEIL</a>
+      <button class="nav-toggle" aria-label="Open navigation" onclick="toggleNav()">☰</button>
+      <div class="nav-links" id="navLinks">
+        <a href="index.html">Home</a>
+        <a href="guides.html">Guides</a>
+        <a href="rules.html">Rules</a>
+        <a href="roadmap.html">Roadmap</a>
+        <a href="https://discord.gg/XzxYPjAeKG" target="_blank" rel="noopener noreferrer">Discord</a>
+      </div>
+    </nav>
 
-<div class="links">
-<a href="index.html">Home</a>
-<a href="guides.html">Guides</a>
-<a href="rules.html">Rules</a>
-<a href="roadmap.html">Roadmap</a>
-<a href="https://discord.gg/XzxYPjAeKG" target="_blank">Discord</a>
-</div>
-</div>
+    <section class="hero">
+      <div class="hero-copy">
+        <p class="eyebrow">DARK FANTASY • SEMI-ANARCHY • PROGRESSION</p>
+        <h1>Where power is earned, not handed out.</h1>
+        <p class="lead">
+          Runeveil is a custom survival server built around real progression. 
+          Join events, earn currency, upgrade your gear, build your playstyle, and fight for your place in a dangerous world.
+        </p>
+        <div class="cta-row">
+          <button class="btn btn-primary" onclick="copyIP()">Copy Server IP</button>
+          <a class="btn btn-secondary" href="https://discord.gg/XzxYPjAeKG" target="_blank" rel="noopener noreferrer">Join Discord</a>
+          <a class="btn btn-ghost" href="guides.html">Read Guides</a>
+        </div>
+        <div class="server-chip">
+          <span class="status"></span>
+          <span class="chip-label">Server IP</span>
+          <strong id="serverip">142.44.144.84</strong>
+        </div>
+      </div>
 
-<div class="hero-content">
+      <div class="hero-panel card">
+        <div class="panel-header">
+          <span class="panel-tag">START HERE</span>
+          <span class="panel-badge">NEW PLAYERS</span>
+        </div>
+        <h3>How progression starts</h3>
+        <p>
+          The easiest way to start growing stronger on Runeveil is by taking part in server events.
+          Events reward players with currency used for upgrades, repairs, and long-term progression.
+        </p>
+        <div class="quick-steps">
+          <div class="quick-step"><span>01</span><p>Join the world</p></div>
+          <div class="quick-step"><span>02</span><p>Compete in events</p></div>
+          <div class="quick-step"><span>03</span><p>Earn currency</p></div>
+          <div class="quick-step"><span>04</span><p>Upgrade your gear</p></div>
+        </div>
+      </div>
+    </section>
+  </header>
 
-<p class="tag">DARK FANTASY • SEMI-ANARCHY • PROGRESSION</p>
+  <main class="container">
+    <section class="section">
+      <div class="section-heading">
+        <p class="section-tag">WHY RUNEVEIL</p>
+        <h2>A survival server with real stakes.</h2>
+        <p>
+          Everything on Runeveil is designed to connect. Events feed currency, currency feeds progression,
+          progression shapes PvP, and PvP makes the world dangerous and memorable.
+        </p>
+      </div>
 
-<h1>Where power is earned,<br>not handed out.</h1>
+      <div class="grid three">
+        <article class="card feature-card">
+          <div class="icon">✦</div>
+          <h3>Events Drive Progression</h3>
+          <p>New players can start earning currency by taking part in server events and competing for valuable rewards.</p>
+        </article>
+        <article class="card feature-card">
+          <div class="icon">⚒</div>
+          <h3>Powerful Upgrade Systems</h3>
+          <p>Turn gear into long-term progression pieces instead of replacing everything with standard vanilla progression.</p>
+        </article>
+        <article class="card feature-card">
+          <div class="icon">⚔</div>
+          <h3>Strategic PvP</h3>
+          <p>Combat is shaped by upgrades, abilities, timing, and positioning instead of simple hit trading.</p>
+        </article>
+      </div>
+    </section>
 
-<p class="desc">
-Runeveil is a custom survival server built around real progression.
-Join events, earn currency, upgrade your gear, build your playstyle,
-and fight for your place in a dangerous world.
-</p>
+    <section class="section">
+      <div class="section-heading">
+        <p class="section-tag">CORE SYSTEMS</p>
+        <h2>The systems behind the server.</h2>
+      </div>
 
-<div class="buttons">
-<button onclick="copyIP()">Copy Server IP</button>
-<a class="btn" href="https://discord.gg/XzxYPjAeKG" target="_blank">Join Discord</a>
-<a class="btn" href="guides.html">Read Guides</a>
-</div>
+      <div class="grid three">
+        <article class="card system-card">
+          <h3>Physical Currency</h3>
+          <p>Currency exists as real items that players can earn, hold, trade, store, protect, or lose.</p>
+        </article>
+        <article class="card system-card">
+          <h3>Gear Upgrades</h3>
+          <p>Weapons and armor grow stronger over time, creating a progression path beyond standard survival.</p>
+        </article>
+        <article class="card system-card">
+          <h3>Armor Abilities</h3>
+          <p>Certain armor can gain passive abilities that activate while worn, enabling different builds and strategies.</p>
+        </article>
+        <article class="card system-card">
+          <h3>Server Events</h3>
+          <p>Events are one of the best ways to begin earning currency and pushing your progression forward.</p>
+        </article>
+        <article class="card system-card">
+          <h3>Semi-Anarchy Survival</h3>
+          <p>Build, raid, fight, ally, explore, and carve out your place in a player-driven world.</p>
+        </article>
+        <article class="card system-card">
+          <h3>Long-Term Progression</h3>
+          <p>Runeveil rewards players who invest time into building stronger gear, better builds, and better game sense.</p>
+        </article>
+      </div>
+    </section>
 
-<p class="ip">Server IP: <strong id="serverip">142.44.144.84</strong></p>
+    <section class="section split">
+      <div class="card lore-card">
+        <p class="section-tag">WORLD LORE</p>
+        <h2>The Veil shattered the old world.</h2>
+        <p>
+          Ancient power bled into the land and changed survival forever. Fragments of that power still remain,
+          hidden behind danger, conflict, and ambition. Those who seize them can forge strength beyond ordinary limits.
+        </p>
+        <p>
+          But nothing powerful stays uncontested. Every reward in Runeveil attracts rivals.
+        </p>
+      </div>
 
-</div>
-</header>
+      <div class="card roadmap-preview">
+        <p class="section-tag">LOOKING AHEAD</p>
+        <h2>Runeveil is still growing.</h2>
+        <p>
+          The server roadmap includes expanded world content, dungeons, more guides, and larger progression features.
+        </p>
+        <a class="text-link" href="roadmap.html">View the roadmap →</a>
+      </div>
+    </section>
 
-<section class="section">
+    <section class="section" id="join">
+      <div class="card join-banner">
+        <div>
+          <p class="section-tag">ENTER RUNEVEIL</p>
+          <h2>Ready to start?</h2>
+          <p>Join the server, take part in events, earn currency, and begin building your power.</p>
+        </div>
+        <div class="cta-row">
+          <button class="btn btn-primary" onclick="copyIP()">Copy Server IP</button>
+          <a class="btn btn-secondary" href="https://discord.gg/XzxYPjAeKG" target="_blank" rel="noopener noreferrer">Open Discord</a>
+        </div>
+      </div>
+    </section>
+  </main>
 
-<h2>How progression starts</h2>
+  <footer class="footer container">
+    <div>© Runeveil</div>
+    <div class="footer-links">
+      <a href="guides.html">Guides</a>
+      <a href="rules.html">Rules</a>
+      <a href="roadmap.html">Roadmap</a>
+    </div>
+  </footer>
 
-<p>
-The easiest way to start growing stronger on Runeveil is by taking part in server events.
-Events reward players with currency used for upgrades, repairs, and long‑term progression.
-</p>
-
-<div class="steps">
-
-<div class="step">
-<span>01</span>
-<p>Join the world</p>
-</div>
-
-<div class="step">
-<span>02</span>
-<p>Compete in events</p>
-</div>
-
-<div class="step">
-<span>03</span>
-<p>Earn currency</p>
-</div>
-
-</div>
-
-</section>
-
-<script src="script.js"></script>
-
+  <script src="script.js"></script>
 </body>
 </html>
