@@ -44,8 +44,3 @@ TURN ON GITHUB PAGES
 
 Your site will publish to:
 https://YOURUSERNAME.github.io/runeveil-site/
-
-This version already includes:
-- Discord: https://discord.gg/XzxYPjAeKG
-- Server IP: 142.44.144.84
-- stronger visible animations, particles, and title glow
