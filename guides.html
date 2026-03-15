@@ -4,128 +4,135 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Runeveil Guides</title>
-  <meta name="description" content="Runeveil new player guides, progression overview, event guide, and core systems." />
+  <meta name="description" content="Runeveil player guides for new players, events, progression, and armor abilities." />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700;800&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css" />
 </head>
-<body class="guides-page">
-  <div class="stars"></div>
-  <div class="mist mist-1"></div>
-  <div class="mist mist-2"></div>
-  <div class="bg-grid"></div>
+<body>
+  <div class="site-bg"></div>
+  <div class="noise"></div>
 
-  <header class="sub-hero">
-    <nav class="nav">
-      <a class="brand" href="index.html">RUNEVEIL</a>
-      <div class="nav-links">
-        <a href="index.html">Home</a>
-        <a href="#start">Getting Started</a>
-        <a href="#events">Events</a>
-        <a href="#progression">Progression</a>
-      </div>
-    </nav>
-
-    <div class="sub-hero-inner">
-      <p class="eyebrow">PLAYER GUIDES</p>
-      <h1>Learn the world. Start stronger.</h1>
-      <p class="hero-text">
-        Everything new players need to know to start progressing on Runeveil.
-      </p>
+  <nav class="nav container top-spaced">
+    <a href="index.html" class="brand">RUNEVEIL</a>
+    <button class="nav-toggle" aria-label="Open navigation" onclick="toggleNav()">☰</button>
+    <div class="nav-links" id="navLinks">
+      <a href="index.html">Home</a>
+      <a href="guides.html">Guides</a>
+      <a href="rules.html">Rules</a>
+      <a href="roadmap.html">Roadmap</a>
+      <a href="https://discord.gg/YOURINVITE" target="_blank" rel="noopener noreferrer">Discord</a>
     </div>
+  </nav>
+
+  <header class="subhero container">
+    <p class="eyebrow">PLAYER GUIDES</p>
+    <h1>Start stronger on Runeveil.</h1>
+    <p class="lead">A clean overview of how new players can begin progressing on the server.</p>
   </header>
 
-  <main>
-    <section id="start" class="section">
-      <div class="section-heading">
-        <p class="section-tag">GETTING STARTED</p>
-        <h2>Your first goal is progression.</h2>
-      </div>
-
-      <div class="guide-grid">
-        <div class="guide-card">
-          <h3>Step 1 — Start Exploring</h3>
+  <main class="container">
+    <section class="section">
+      <div class="grid two">
+        <article class="card guide-card">
+          <p class="section-tag">FIRST STEPS</p>
+          <h2>Your first goal</h2>
           <p>
-            Gather resources, move out into the world, and prepare yourself for a dangerous survival experience.
+            Your first goal on Runeveil is to start earning currency. The best way to do that as a new player is by taking part in server events.
           </p>
-        </div>
-        <div class="guide-card">
-          <h3>Step 2 — Watch for Events</h3>
+        </article>
+        <article class="card guide-card">
+          <p class="section-tag">WHY EVENTS</p>
+          <h2>Why events matter</h2>
           <p>
-            Events are one of the best ways for new players to start earning currency and progression rewards.
+            Events reward players with currency and progression materials. They are one of the fastest ways to begin building real power on the server.
           </p>
-        </div>
-        <div class="guide-card">
-          <h3>Step 3 — Build Wealth</h3>
-          <p>
-            Currency fuels the server’s upgrade systems, so earning it early is one of the smartest things a new player can do.
-          </p>
-        </div>
+        </article>
       </div>
     </section>
 
-    <section id="events" class="section alt">
-      <div class="section-heading">
-        <p class="section-tag">EVENT GUIDE</p>
-        <h2>Why events matter</h2>
-      </div>
-
-      <div class="long-panel">
-        <p>
-          Events are one of the core gameplay systems on Runeveil. They reward players with currency, materials,
-          and progression opportunities that can help launch a new player forward.
-        </p>
-        <p>
-          Because event rewards are valuable, other players will often compete for them too.
-          That means events are not just about showing up. They are also about timing, risk, and survival.
-        </p>
+    <section class="section">
+      <div class="grid three">
+        <article class="card step-card">
+          <span class="step-number">01</span>
+          <h3>Join and Survive</h3>
+          <p>Gather resources, move into the world, and start preparing yourself for future conflict.</p>
+        </article>
+        <article class="card step-card">
+          <span class="step-number">02</span>
+          <h3>Watch for Events</h3>
+          <p>Stay alert for event announcements. Events are one of the best entry points into Runeveil progression.</p>
+        </article>
+        <article class="card step-card">
+          <span class="step-number">03</span>
+          <h3>Earn Currency</h3>
+          <p>Currency fuels upgrades, repairs, and long-term progression systems across the server.</p>
+        </article>
+        <article class="card step-card">
+          <span class="step-number">04</span>
+          <h3>Upgrade Gear</h3>
+          <p>Once you have currency, start improving your gear so you can survive longer and compete better.</p>
+        </article>
+        <article class="card step-card">
+          <span class="step-number">05</span>
+          <h3>Build Your Playstyle</h3>
+          <p>Progression becomes deeper over time as players combine stronger gear with different ability choices.</p>
+        </article>
+        <article class="card step-card">
+          <span class="step-number">06</span>
+          <h3>Fight for More</h3>
+          <p>As rewards get better, so do the players competing for them. Every step upward creates bigger stakes.</p>
+        </article>
       </div>
     </section>
 
-    <section id="progression" class="section">
-      <div class="section-heading">
+    <section class="section split">
+      <article class="card">
+        <p class="section-tag">ARMOR ABILITIES</p>
+        <h2>How abilities work</h2>
+        <p>
+          Some armor can gain passive abilities that activate while worn. These abilities can improve survival,
+          defense, combat pressure, or utility depending on the build a player is trying to create.
+        </p>
+      </article>
+      <article class="card">
         <p class="section-tag">PROGRESSION</p>
-        <h2>How players grow stronger</h2>
-      </div>
-
-      <div class="guide-grid">
-        <div class="guide-card">
-          <h3>Currency</h3>
-          <p>
-            Currency is used to fuel important progression systems. Earning it consistently is the foundation of growing stronger.
-          </p>
-        </div>
-        <div class="guide-card">
-          <h3>Upgrades</h3>
-          <p>
-            Gear can be improved beyond vanilla survival, making long-term investment in your equipment worthwhile.
-          </p>
-        </div>
-        <div class="guide-card">
-          <h3>Armor Abilities</h3>
-          <p>
-            Some armor can gain passive abilities that activate while worn, allowing players to create different builds and survival strategies.
-          </p>
-        </div>
-      </div>
+        <h2>What makes Runeveil different</h2>
+        <p>
+          Runeveil is built around staying invested in your gear and your build. Instead of ending at vanilla progression,
+          players can continue pushing forward through upgrades, events, and better decision making.
+        </p>
+      </article>
     </section>
 
-    <section class="section cta-section">
-      <div class="cta-box">
-        <p class="section-tag">READY TO PLAY?</p>
-        <h2>Join Runeveil and start your climb.</h2>
-        <div class="hero-actions">
-          <a class="primary-btn" href="index.html#join">Return Home</a>
-          <a class="secondary-btn" href="https://discord.gg/XzxYPjAeKG" target="_blank" rel="noopener noreferrer">Open Discord</a>
+    <section class="section">
+      <div class="card join-banner">
+        <div>
+          <p class="section-tag">NEED HELP?</p>
+          <h2>Join the Runeveil community</h2>
+          <p>
+            If you have questions, want updates, or want to stay informed about server events and announcements,
+            join the Discord.
+          </p>
+        </div>
+        <div class="cta-row">
+          <a class="btn btn-secondary" href="https://discord.gg/XzxYPjAeKG" target="_blank" rel="noopener noreferrer">Join Discord</a>
         </div>
       </div>
     </section>
   </main>
 
-  <footer class="footer">
+  <footer class="footer container">
     <div>© Runeveil</div>
-    <div class="footer-note">Guides for new players and veterans alike.</div>
+    <div class="footer-links">
+      <a href="index.html">Home</a>
+      <a href="rules.html">Rules</a>
+      <a href="roadmap.html">Roadmap</a>
+      <a href="https://discord.gg/YOURINVITE" target="_blank" rel="noopener noreferrer">Discord</a>
+    </div>
   </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>

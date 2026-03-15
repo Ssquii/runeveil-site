@@ -1,33 +1,46 @@
-RUNEVEIL WEBSITE SETUP
+RUNEVEIL PROFESSIONAL WEBSITE SETUP
 
-FILES INCLUDED
+FILES
 - index.html
 - guides.html
+- rules.html
+- roadmap.html
 - styles.css
 - script.js
 
-WHAT TO EDIT
-1. Open index.html and guides.html in Notepad or any text editor.
-2. Replace:
-   - play.runeveil.net
-   - https://discord.gg/YOURINVITE
+EDIT THESE FIRST
+Open index.html and replace:
+- play.runeveil.net
+- https://discord.gg/YOURINVITE
 
-HOW TO TEST
-1. Double-click index.html
-2. Click around the site
-3. Open guides.html too
+Open guides.html and replace:
+- https://discord.gg/YOURINVITE
 
-HOW TO PUT IT ONLINE WITH GITHUB PAGES
-1. Make a GitHub account
-2. Create a repo called runeveil-site
-3. Upload all 4 files
-4. Open repo Settings > Pages
-5. Choose:
+Open any other pages if you want to customize wording.
+
+TEST LOCALLY
+Double-click index.html to preview the site.
+
+UPLOAD TO GITHUB
+1. Create a GitHub account
+2. Create a new repository named runeveil-site
+3. Upload:
+   - index.html
+   - guides.html
+   - rules.html
+   - roadmap.html
+   - styles.css
+   - script.js
+4. Commit changes
+
+TURN ON GITHUB PAGES
+1. Open the repo
+2. Go to Settings > Pages
+3. Set:
    - Source: Deploy from branch
    - Branch: main
    - Folder: /root
-6. Save
-7. Wait for GitHub to publish
+4. Save
 
-Your live site will be:
+Your site will publish to:
 https://YOURUSERNAME.github.io/runeveil-site/
