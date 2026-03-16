@@ -448,3 +448,20 @@ h3 {
     grid-template-columns: 1fr;
   }
 }
+
+/* Fix text touching card edges */
+
+.card,
+.section,
+.section-box,
+.content-box {
+  padding: 32px;
+}
+
+.card h1,
+.card h2,
+.section h1,
+.section h2 {
+  margin-bottom: 14px;
+  line-height: 1.2;
+}
