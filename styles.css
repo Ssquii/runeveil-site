@@ -467,6 +467,6 @@ h3 {
 }
 
 /* Prevent PHASE badge from wrapping */
-.phase {
+.phase-badge {
   white-space: nowrap;
 }
