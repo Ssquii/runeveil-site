@@ -465,3 +465,8 @@ h3 {
   margin-bottom: 14px;
   line-height: 1.2;
 }
+
+/* Prevent PHASE badge from wrapping */
+.phase {
+  white-space: nowrap;
+}
