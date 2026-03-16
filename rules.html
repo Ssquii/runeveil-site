@@ -1,20 +1,87 @@
-
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<meta charset="UTF-8">
-<title>Runeveil Rules</title>
-<link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Runeveil Rules</title>
+  <meta name="description" content="Runeveil server rules and expectations." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700;800&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
 </head>
-
 <body>
+  <div class="site-bg"></div>
+  <div class="noise"></div>
 
-<div class="page">
-<h1>Server Rules</h1>
+  <nav class="nav container top-spaced">
+    <a href="index.html" class="brand">RUNEVEIL</a>
+    <button class="nav-toggle" aria-label="Open navigation" onclick="toggleNav()">☰</button>
+    <div class="nav-links" id="navLinks">
+      <a href="index.html">Home</a>
+      <a href="guides.html">Guides</a>
+      <a href="rules.html">Rules</a>
+      <a href="roadmap.html">Roadmap</a>
+    </div>
+  </nav>
 
-<p>Respect players and staff. No cheating or exploiting.</p>
+  <header class="subhero container">
+    <p class="eyebrow">SERVER RULES</p>
+    <h1>Freedom with limits.</h1>
+    <p class="lead">Runeveil is semi-anarchy, but fairness still matters.</p>
+  </header>
 
-</div>
+  <main class="container">
+    <section class="section">
+      <div class="rules-list">
+        <article class="card rule-item">
+          <span>01</span>
+          <div>
+            <h3>No cheating</h3>
+            <p>Do not use hacked clients, combat cheats, x-ray, auto-clickers, or anything that gives an unfair gameplay advantage.</p>
+          </div>
+        </article>
+        <article class="card rule-item">
+          <span>02</span>
+          <div>
+            <h3>No duping or exploiting</h3>
+            <p>Do not abuse bugs, duplication glitches, or broken mechanics to gain items, currency, or progression unfairly.</p>
+          </div>
+        </article>
+        <article class="card rule-item">
+          <span>03</span>
+          <div>
+            <h3>No lag machines</h3>
+            <p>Do not intentionally crash or degrade the server through lag machines, abusive farms, or malicious contraptions.</p>
+          </div>
+        </article>
+        <article class="card rule-item">
+          <span>04</span>
+          <div>
+            <h3>No real-world threats or doxing</h3>
+            <p>Keep conflict in-game. Real-world threats, doxing, harassment campaigns, and serious abuse are not allowed.</p>
+          </div>
+        </article>
+        <article class="card rule-item">
+          <span>05</span>
+          <div>
+            <h3>Respect staff decisions</h3>
+            <p>If a staff member makes a ruling about an exploit or server issue, follow it while the issue is being handled.</p>
+          </div>
+        </article>
+      </div>
+    </section>
+  </main>
 
+  <footer class="footer container">
+    <div>© Runeveil</div>
+    <div class="footer-links">
+      <a href="index.html">Home</a>
+      <a href="guides.html">Guides</a>
+      <a href="roadmap.html">Roadmap</a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>

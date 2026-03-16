@@ -1,34 +1,138 @@
-
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<meta charset="UTF-8">
-<title>Runeveil Guides</title>
-<link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Runeveil Guides</title>
+  <meta name="description" content="Runeveil player guides for new players, events, progression, and armor abilities." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700;800&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
 </head>
-
 <body>
+  <div class="site-bg"></div>
+  <div class="noise"></div>
 
-<div class="nav">
-<div class="logo">RUNEVEIL</div>
-<div class="nav-links">
-<a href="index.html">Home</a>
-<a href="rules.html">Rules</a>
-<a href="roadmap.html">Roadmap</a>
-<a href="https://runveil.tebex.io" target="_blank">Shop</a>
-<a href="https://discord.gg/XzxYPjAeKG" target="_blank">Discord</a>
-</div>
-</div>
+  <nav class="nav container top-spaced">
+    <a href="index.html" class="brand">RUNEVEIL</a>
+    <button class="nav-toggle" aria-label="Open navigation" onclick="toggleNav()">☰</button>
+    <div class="nav-links" id="navLinks">
+      <a href="index.html">Home</a>
+      <a href="guides.html">Guides</a>
+      <a href="rules.html">Rules</a>
+      <a href="roadmap.html">Roadmap</a>
+      <a href="https://discord.gg/YOURINVITE" target="_blank" rel="noopener noreferrer">Discord</a>
+    </div>
+  </nav>
 
-<div class="page">
+  <header class="subhero container">
+    <p class="eyebrow">PLAYER GUIDES</p>
+    <h1>Start stronger on Runeveil.</h1>
+    <p class="lead">A clean overview of how new players can begin progressing on the server.</p>
+  </header>
 
-<h1>Runeveil Guides</h1>
+  <main class="container">
+    <section class="section">
+      <div class="grid two">
+        <article class="card guide-card">
+          <p class="section-tag">FIRST STEPS</p>
+          <h2>Your first goal</h2>
+          <p>
+            Your first goal on Runeveil is to start earning currency. The best way to do that as a new player is by taking part in server events.
+          </p>
+        </article>
+        <article class="card guide-card">
+          <p class="section-tag">WHY EVENTS</p>
+          <h2>Why events matter</h2>
+          <p>
+            Events reward players with currency and progression materials. They are one of the fastest ways to begin building real power on the server.
+          </p>
+        </article>
+      </div>
+    </section>
 
-<p>
-Welcome to Runeveil. Progress through events, gather currency, and unlock powerful upgrades.
-</p>
+    <section class="section">
+      <div class="grid three">
+        <article class="card step-card">
+          <span class="step-number">01</span>
+          <h3>Join and Survive</h3>
+          <p>Gather resources, move into the world, and start preparing yourself for future conflict.</p>
+        </article>
+        <article class="card step-card">
+          <span class="step-number">02</span>
+          <h3>Watch for Events</h3>
+          <p>Stay alert for event announcements. Events are one of the best entry points into Runeveil progression.</p>
+        </article>
+        <article class="card step-card">
+          <span class="step-number">03</span>
+          <h3>Earn Currency</h3>
+          <p>Currency fuels upgrades, repairs, and long-term progression systems across the server.</p>
+        </article>
+        <article class="card step-card">
+          <span class="step-number">04</span>
+          <h3>Upgrade Gear</h3>
+          <p>Once you have currency, start improving your gear so you can survive longer and compete better.</p>
+        </article>
+        <article class="card step-card">
+          <span class="step-number">05</span>
+          <h3>Build Your Playstyle</h3>
+          <p>Progression becomes deeper over time as players combine stronger gear with different ability choices.</p>
+        </article>
+        <article class="card step-card">
+          <span class="step-number">06</span>
+          <h3>Fight for More</h3>
+          <p>As rewards get better, so do the players competing for them. Every step upward creates bigger stakes.</p>
+        </article>
+      </div>
+    </section>
 
-</div>
+    <section class="section split">
+      <article class="card">
+        <p class="section-tag">ARMOR ABILITIES</p>
+        <h2>How abilities work</h2>
+        <p>
+          Some armor can gain passive abilities that activate while worn. These abilities can improve survival,
+          defense, combat pressure, or utility depending on the build a player is trying to create.
+        </p>
+      </article>
+      <article class="card">
+        <p class="section-tag">PROGRESSION</p>
+        <h2>What makes Runeveil different</h2>
+        <p>
+          Runeveil is built around staying invested in your gear and your build. Instead of ending at vanilla progression,
+          players can continue pushing forward through upgrades, events, and better decision making.
+        </p>
+      </article>
+    </section>
 
+    <section class="section">
+      <div class="card join-banner">
+        <div>
+          <p class="section-tag">NEED HELP?</p>
+          <h2>Join the Runeveil community</h2>
+          <p>
+            If you have questions, want updates, or want to stay informed about server events and announcements,
+            join the Discord.
+          </p>
+        </div>
+        <div class="cta-row">
+          <a class="btn btn-secondary" href="https://discord.gg/XzxYPjAeKG" target="_blank" rel="noopener noreferrer">Join Discord</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer container">
+    <div>© Runeveil</div>
+    <div class="footer-links">
+      <a href="index.html">Home</a>
+      <a href="rules.html">Rules</a>
+      <a href="roadmap.html">Roadmap</a>
+      <a href="https://discord.gg/YOURINVITE" target="_blank" rel="noopener noreferrer">Discord</a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>

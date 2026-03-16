@@ -10,11 +10,11 @@ FILES
 
 EDIT THESE FIRST
 Open index.html and replace:
-- 142.44.144.84
-- https://discord.gg/XzxYPjAeKG
+- play.runeveil.net
+- https://discord.gg/YOURINVITE
 
 Open guides.html and replace:
-- https://discord.gg/XzxYPjAeKG
+- https://discord.gg/YOURINVITE
 
 Open any other pages if you want to customize wording.
 
