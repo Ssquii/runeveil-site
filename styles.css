@@ -362,7 +362,7 @@ h3 {
 .rule-item,
 .timeline-item {
   display: grid;
-  grid-template-columns: 70px 1fr;
+  grid-template-columns: 140px 1fr;
   gap: 16px;
   align-items: start;
   padding: 20px;
@@ -374,13 +374,14 @@ h3 {
   align-items: center;
   justify-content: center;
   min-height: 44px;
+  padding: 0 18px;
   border-radius: 14px;
   background: rgba(255,255,255,.04);
   border: 1px solid var(--line-2);
   color: var(--accent);
   font-weight: 800;
+  white-space: nowrap;
 }
-
 .footer {
   padding: 22px 0 38px;
   display: flex;
